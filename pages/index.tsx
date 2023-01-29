@@ -2,9 +2,11 @@ import Main from '../components/main'
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-
+import { basePath } from '../next.config.js'
 
 export default function Home() {
+    console.log(process.env.basePath)
+
   return (
         <Main>
             <div className="text-center mt-36 mb-10">
@@ -15,11 +17,11 @@ export default function Home() {
                 <div className="w-2/12 flex-none md:hidden lg:block "></div>
                 <div className="flex-1">
                     <div className="flex flex-row items-center justify-center mb-6">
-                        <img alt="logo" src={`${process.env.BASE_PATH}/next-logo.png`} className="h-20"></img>
+                        <img alt="logo" src={`${basePath}/next-logo.png`} className="h-20"></img>
                           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10">
                               <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v12m6-6H6" />
                           </svg>
-                        <img alt="logo" src={`${process.env.BASE_PATH}/tailwind-logo.png`}  className="h-28"></img>
+                        <img alt="logo" src={`${basePath}/tailwind-logo.png`}  className="h-28"></img>
                     </div>
                 </div>
                 <div className="w-2/12 flex-none md:hidden lg:block "></div>
