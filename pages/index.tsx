@@ -15,11 +15,11 @@ export default function Home() {
                 <div className="w-2/12 flex-none md:hidden lg:block "></div>
                 <div className="flex-1">
                     <div className="flex flex-row items-center justify-center mb-6">
-                        <img alt="logo" src="/next-logo.png" className="h-20"></img>
+                        <img alt="logo" src={`${process.env.BASE_PATH}/next-logo.png`} className="h-20"></img>
                           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10">
                               <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v12m6-6H6" />
                           </svg>
-                        <img alt="logo" src="/tailwind-logo.png"  className="h-28"></img>
+                        <img alt="logo" src={`${process.env.BASE_PATH}/tailwind-logo.png`}  className="h-28"></img>
                     </div>
                 </div>
                 <div className="w-2/12 flex-none md:hidden lg:block "></div>
