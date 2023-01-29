@@ -28,11 +28,7 @@ function Navbar(){
 					<h2 className="text-sm font-semibold tracking-widest uppercase dark:text-gray-400 text-slate-400">Example Page</h2>
 					<div className="flex flex-col space-y-1">
 						<NavLink to="/ExamplePages/employees">Employees</NavLink>
-						<NavLink>Page 1</NavLink>
-						<NavLink>Page 2</NavLink>
-						<NavLink>Page 3</NavLink>
-						<NavLink>Page 4</NavLink>
-						
+									
 					</div>
 				</div>
 
