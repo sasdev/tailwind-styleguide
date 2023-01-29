@@ -1,6 +1,7 @@
 import React from "react"
 import NavLink from "./navlink"
 
+
 function NavLinksSection1(){
     return(
         <>
