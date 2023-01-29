@@ -3,7 +3,7 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  basePath: process.env.NODE_ENV === 'development' ? '' : '/sasdev.github.io',
+  basePath: process.env.NODE_ENV === 'development' ? '/test' : '/sasdev.github.io',
 }
 
 module.exports = nextConfig
