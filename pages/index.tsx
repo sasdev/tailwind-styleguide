@@ -11,9 +11,6 @@ export default function Home() {
 
   return (
         <Main>
-
-            Base Path: {basePath}
-
             <div className="text-center mt-36 mb-10">
                 <h1 className="text-6xl">Styleguide Demo</h1>
             </div>
@@ -26,7 +23,7 @@ export default function Home() {
                           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10">
                               <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v12m6-6H6" />
                           </svg>
-                        <img alt="logo" src={`${process.env.BASE_PATH}/tailwind-logo.png`}  className="h-28"></img>
+                        <img alt="logo" src={`${basePath}/tailwind-logo.png`}  className="h-28"></img>
                     </div>
                 </div>
                 <div className="w-2/12 flex-none md:hidden lg:block "></div>

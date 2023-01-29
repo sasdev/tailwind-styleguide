@@ -4,15 +4,15 @@ import NavLink from "./navlink"
 function NavLinksSection2(){
     return(
         <>
-            <NavLink to="/headings">
+            {/* <NavLink to="/headings">
                 Headings
-            </NavLink>
+            </NavLink> */}
             <NavLink to="/cards">
                 Cards
             </NavLink>
-            <NavLink to="/sections">
+            {/* <NavLink to="/sections">
                 Sections
-            </NavLink>
+            </NavLink> */}
 
         </>
     )
