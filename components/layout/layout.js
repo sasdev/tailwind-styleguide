@@ -2,27 +2,16 @@ import React from "react";
 import Navbar from "../navbar/navbar"
 
 function Layout({children}){
-    return(
+    return (
         <div className="flex">
-            <aside className="flex-none w-60 bg-slate-800">
+            <aside className="flex-none w-60 bg-slate-900 min-h-screen fixed">
                 <Navbar />
             </aside>
-            {children}
+            <div className="flex-1  ml-60">
+                {children}
+            </div>
         </div>
-    )
+    );
 }
-
-// const Layout =({children}) =>{
-//     return(
-//         <div className="flex">
-//             <aside className="flex-none w-60 bg-slate-800">
-//                 <Navbar />
-//             </aside>
-//             <main className="px-10 pt-5 flex-1 max-w-xl">
-//                 {children}
-//             </main>
-//         </div>
-//     )
-// }
 
 export default Layout

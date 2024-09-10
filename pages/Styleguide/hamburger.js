@@ -1,12 +1,11 @@
 import React from "react"
 import Heading1 from "../../components/headings/heading1"
 import Heading2 from "../../components/headings/heading2"
-import Main from "../../components/main"
+import MainContainer from "../../components/MainContainer"
 
 function Hamburger(){
     return(
-        <Main>
-			<Heading1>Hamburger Icons</Heading1>
+        <MainContainer heading="Hamburger Icons">
         
 <div className="flex">
   <div className="grid grid-cols-1 sm:grid-cols-3 gap-16 m-4">
@@ -221,7 +220,7 @@ function Hamburger(){
     
   </div>
 </div>
-        </Main>
+        </MainContainer>
     )
 }
 

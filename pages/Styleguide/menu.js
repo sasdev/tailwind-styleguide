@@ -4,7 +4,7 @@ import {useState} from 'react'
 import Heading1 from "../../components/headings/heading1"
 import Heading2 from "../../components/headings/heading2"
 import Card1 from "../../components/Cards/card1"
-import Main from "../../components/main"
+import MainContainer from "../../components/MainContainer"
 
 function Menu1(){
     const [menuOpen, setMenuOpen] = useState(true)
@@ -16,7 +16,7 @@ function Menu1(){
     }
 
     return(
-        <Main>
+        <MainContainer heading="Menu">
             <Heading1>Menu</Heading1>
 
 
@@ -25,7 +25,7 @@ function Menu1(){
             <Card1>
         
         {/* <!-- page --> */}
-        <main className="h-96 w-full bg-gray-100 text-gray-700">
+        <main className="h-96 w-full bg-gray-100 text-gray-700"></main>
             {/* <!-- header page --> */}
             <header className="flex w-full items-center justify-between border-b-2 border-grey-200 bg-white p-2">
                 {/* <!-- logo --> */}
@@ -110,7 +110,7 @@ function Menu1(){
                     esse asperiores aliquam repellat. Harum aliquid non officiis porro at cumque eaque inventore iure. Modi sunt
                     optio mollitia repellat sed ab quibusdam quos harum!</div>
             </div>
-        </main>
+
 
         </Card1>
 
@@ -304,7 +304,7 @@ function Menu1(){
 
 
 
-        </Main>
+        </MainContainer>
     )
 }
 

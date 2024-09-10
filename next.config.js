@@ -3,7 +3,10 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  basePath: process.env.NODE_ENV === 'development' ? '/test' : '/sasdev.github.io',
-}
+  basePath: process.env.NODE_ENV === 'development' ? '' : '/sasdev.github.io',
+  images: {
+    domains: ['reqres.in', 'via.placeholder.com'],
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

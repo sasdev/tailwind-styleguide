@@ -2,14 +2,12 @@ import React from "react"
 import Heading1 from "../../components/headings/heading1"
 import Heading2 from "../../components/headings/heading2"
 import Card1 from "../../components/Cards/card1"
-import Cards from "../cards"
-import Main from "../../components/main"
+
+import MainContainer from "../../components/MainContainer"
 
 function grid() {
     return(
-        <Main>
-
-        <Heading1>Grid</Heading1>
+        <MainContainer heading="Grid">
 
         <div className="Description mb-10">
         Grids are used to create a flexible and responsive layout for elements on a website. They allow for the easy creation of grid-based layouts, where elements are arranged in rows and columns. Grids in Tailwind CSS are built using CSS Flexbox, which allows for the easy alignment and distribution of elements within the grid. Grids can be customized to change the number of columns, gutter widths, and the alignment of elements within the grid. They also come with a set of responsive classes that allow for the grid to adjust to different screen sizes, allowing for a consistent and responsive layout across different devices.
@@ -72,7 +70,7 @@ function grid() {
             </div>
         </Card1>
    
-        </Main>
+        </MainContainer>
     )
 }
 

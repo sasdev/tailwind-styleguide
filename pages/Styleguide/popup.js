@@ -1,5 +1,5 @@
 import React from "react"
-import Main from "../../components/main"
+import MainContainer from "../../components/MainContainer"
 import Heading1 from "../../components/headings/heading1"
 import Heading2 from "../../components/headings/heading2"
 import Card1 from "../../components/Cards/card1"
@@ -10,7 +10,7 @@ export default function Popup(){
     const [showPopup, setShowPopup] = useState(false);
 
     return(
-        <Main>
+        <MainContainer>
             <Heading1>Popup</Heading1>
             <Heading2>Example 1</Heading2>
 
@@ -52,6 +52,6 @@ export default function Popup(){
               </Modal>
             </>
 
-        </Main>
+        </MainContainer>
     )
 }

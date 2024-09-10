@@ -2,13 +2,12 @@ import React from "react"
 import Heading1 from "../../components/headings/heading1"
 import Heading2 from "../../components/headings/heading2"
 import Card1 from "../../components/Cards/card1"
-import Main from "../../components/main"
+import MainContainer from "../../components/MainContainer"
 
 
 function skeleton(){
     return(
-        <Main>
-        <Heading1>Skeleton</Heading1>
+        <MainContainer heading="Skeleton">
 
         <div className="Description mb-10">
             Skeletons are used to create a loading state for elements on a website. They are essentially placeholders that are used to simulate the loading of content, and give the appearance that the content is loading dynamically. Skeletons are typically used for elements such as images, paragraphs, and buttons, and are designed to match the layout and styling of the final content. They are often used in conjunction with JavaScript to simulate the loading of content in a non-blocking way, and provide a better user experience by giving the user an indication that the content is on the way.
@@ -155,7 +154,7 @@ function skeleton(){
             </div>
         </Card1>
 
-        </Main>
+        </MainContainer>
     )
 }
 

@@ -4,7 +4,7 @@ import Layout from "../../components/layout/layout"
 import Heading1 from "../../components/headings/heading1"
 import Heading2 from "../../components/headings/heading2"
 import Card1 from "../../components/Cards/card1"
-import Main from "../../components/main"
+import MainContainer from "../../components/MainContainer"
 
 export default function List1(users) {
     const [data, setData] = useState([])
@@ -26,9 +26,7 @@ export default function List1(users) {
     if (!data) return <p>No profile data</p>
 
     return (
-        <Main>
-
-            <Heading1>List</Heading1>
+        <MainContainer heading="List">
 
             <Heading2>Example 2</Heading2>
             <Card1>
@@ -61,6 +59,6 @@ export default function List1(users) {
             </Card1>            
 
 
-         </Main>
+         </MainContainer>
       );
 }

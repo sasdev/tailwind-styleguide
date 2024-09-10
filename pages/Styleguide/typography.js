@@ -5,12 +5,11 @@ import Heading3 from "../../components/headings/heading3"
 import Heading4 from "../../components/headings/heading4"
 import Heading5 from "../../components/headings/heading5"
 import Card1 from "../../components/Cards/card1"
-import Main from "../../components/main"
+import MainContainer from "../../components/MainContainer"
 
 function typography(){
     return(
-        <Main>
-            <Heading1>Typography</Heading1>
+        <MainContainer heading="Typography">
 
             <p className="pb-10">Utilities for controlling the font size of an element.</p>
 
@@ -42,7 +41,7 @@ function typography(){
 
 
 
-        </Main>
+        </MainContainer>
 
     )
 }

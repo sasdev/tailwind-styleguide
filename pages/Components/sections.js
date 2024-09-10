@@ -1,14 +1,12 @@
 import React from "react"
-import Main from "../components/main"
-import Heading1 from "../components/headings/heading1"
-import Heading2 from "../components/headings/heading2"
-import Card1 from "../components/Cards/card1"
-import Card3 from "../components/Cards/card3"
+import MainContainer from "../../components/MainContainer"
+import Heading2 from "../../components/headings/heading2"
+import Card1 from "../../components/Cards/card1"
+import Card3 from "../../components/Cards/card3"
 
 export default function Sections(){
     return(
-        <Main>
-            <Heading1>Sections</Heading1>
+        <MainContainer heading="Sections">
 
             <p className="mb-5">Sections for pages</p>
 
@@ -77,7 +75,7 @@ export default function Sections(){
                 </div>
             </Card1>
 
-        </Main>
+        </MainContainer>
     )
 }
 

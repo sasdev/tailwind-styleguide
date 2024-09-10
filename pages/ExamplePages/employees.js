@@ -1,6 +1,6 @@
 import React from "react"
 import { useState, useEffect } from 'react'
-import Main from "../../components/main"
+import MainContainer from "../../components/MainContainer"
 import Heading2 from "../../components/headings/heading2"
 import Card1 from "../../components/Cards/card1"
 import { Tab } from "@headlessui/react"
@@ -30,7 +30,7 @@ function Employees(){
     if (!data) return <p>No profile data</p>
 
     return(
-        <Main usePadding={false} >
+        <MainContainer usePadding={false} >
 			<div className="h-full">
 
                 {/* Page Title*/}
@@ -234,7 +234,7 @@ function Employees(){
               </Modal>
             </>
 
-        </Main>
+        </MainContainer>
     )
 }
 

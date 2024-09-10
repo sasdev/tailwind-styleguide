@@ -1,7 +1,7 @@
 import React from "react"
 import { useState, useEffect } from 'react'
 import Layout from "../../components/layout/layout"
-import Main from "../../components/main"
+import MainContainer from "../../components/MainContainer"
 import Heading1 from "../../components/headings/heading1"
 import Heading2 from "../../components/headings/heading2"
 import Card1 from "../../components/Cards/card1"
@@ -9,7 +9,7 @@ import { Tab } from "@headlessui/react"
 
 export default function TabsDemo() {
     return (
-	    <Main>
+	    <MainContainer>
 			<Heading1>Tabs</Heading1>
 
 			<p className="mb-10">Headless-UI is used for the interactivity</p>
@@ -31,7 +31,7 @@ export default function TabsDemo() {
     			</Tab.Group>
 			</Card1>
 
-    	</Main>
+    	</MainContainer>
     )
 }
 

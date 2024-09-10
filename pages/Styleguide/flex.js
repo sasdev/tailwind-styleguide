@@ -3,12 +3,11 @@ import Heading1 from "../../components/headings/heading1"
 import Heading2 from "../../components/headings/heading2"
 import Card1 from "../../components/Cards/card1"
 import Card2 from "../../components/Cards/card2"
-import Main from "../../components/main"
+import MainContainer from "../../components/MainContainer"
 
 function Flex(){
     return(
-        <Main>  
-            <Heading1>Flex</Heading1>
+        <MainContainer heading="Flex">  
 
             <div className="Description mb-10">
             Flexbox is used as the underlying layout system for building responsive and flexible grid-based layouts. Flexbox, or the Flexible Box Layout, is a CSS layout module that makes it easy to create flexible and responsive designs. It allows for the easy alignment and distribution of elements within a container. With Flexbox, elements can be aligned both horizontally and vertically, and can be given different proportions of space within the container. Tailwind CSS provides a set of utility classes that make it easy to use Flexbox to create a variety of different layouts, including grid-based layouts, vertical centering, and more. This makes it easy to create flexible and responsive designs that adapt to different screen sizes and devices.
@@ -42,7 +41,7 @@ function Flex(){
                 </div>
             </Card1>
 
-        </Main>
+        </MainContainer>
     )
 }
 

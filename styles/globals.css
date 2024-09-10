@@ -2,36 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
-html,
+html {
+  color-scheme: light;
+}
+
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
+  color: black;
+  background: white;
 }
 
 @media (prefers-color-scheme: dark) {
   html {
-    color-scheme: dark;
+    color-scheme: light;
   }
   body {
-    color: white;
-    background: black;
-  }
-}
-
+    color: black;
+    background: rgb(241, 245, 249);
+} /* <-- Missing closing brace for @media block */
 
 .bg-stripes-sky {
   background-color: #38bdf81a;
   background-image: linear-gradient(135deg,#0ea5e980 10%,transparent 0,transparent 50%,#0ea5e980 0,#0ea5e980 60%,transparent 0,transparent);
   background-size: 7.07px 7.07px;
+}
 }
