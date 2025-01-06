@@ -44,6 +44,7 @@ const OrderHistory = ({ orders }) => {
               </div>
               <div className="inline-flex items-center text-base text-gray-800">
                 {order.total}
+                
               </div>
             </div>
           </li>
