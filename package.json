@@ -4,13 +4,6 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-<<<<<<< HEAD
-    "build": "next build && next export",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-=======
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
@@ -19,7 +12,6 @@
   "dependencies": {
     "@babel/core": "^7.26.0",
     "@babel/preset-env": "^7.26.0",
->>>>>>> gh-pages
     "@headlessui/react": "^1.7.7",
     "@headlessui/tailwindcss": "^0.1.2",
     "@heroicons/react": "^1.0.6",
@@ -28,12 +20,8 @@
     "@types/react-dom": "18.0.10",
     "eslint-config-next": "^13.1.5",
     "faker": "^5.5.3",
-<<<<<<< HEAD
-    "next": "^14.2.8",
-=======
     "framer-motion": "^11.15.0",
     "next": "^15.1.2",
->>>>>>> gh-pages
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-modal": "^3.16.1",
