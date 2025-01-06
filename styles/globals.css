@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Style used for debug */
+.b1 {
+    border: solid 1px red !important;
+}
+
+.b2 {
+  border: solid 1px green !important;
+}
+
+.b3 {
+  border: solid 1px purple !important;
+}
+
+html {
+  color-scheme: light;
+}
+
+body {
+  color: black;
+  background: white;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: light;
+  }
+  body {
+    color: black;
+    background: rgb(241, 245, 249);
+} /* <-- Missing closing brace for @media block */
+
+.bg-stripes-sky {
+  background-color: #38bdf81a;
+  background-image: linear-gradient(135deg,#0ea5e980 10%,transparent 0,transparent 50%,#0ea5e980 0,#0ea5e980 60%,transparent 0,transparent);
+  background-size: 7.07px 7.07px;
+}
+}
