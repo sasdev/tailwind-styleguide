@@ -4,11 +4,7 @@ import Heading2 from "../../components/headings/heading2"
 import Heading3 from "../../components/headings/heading3"
 import Heading4 from "../../components/headings/heading4"
 import Heading5 from "../../components/headings/heading5"
-<<<<<<< HEAD
-import Card1 from "../../components/Cards/card1"
-=======
 import Card1 from "../../components/cards/card1"
->>>>>>> gh-pages
 import MainContainer from "../../components/MainContainer"
 
 function typography(){

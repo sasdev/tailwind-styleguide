@@ -1,11 +1,7 @@
 import React from "react";
 import Heading1 from "../../components/headings/heading1";
 import MainContainer from "../../components/MainContainer";
-<<<<<<< HEAD
-import Card1 from "../../components/Cards/card1";
-=======
 import Card1 from "../../components/cards/card1";
->>>>>>> gh-pages
 
 function ColorBox({ color, shade, hex }) {
   return (

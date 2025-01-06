@@ -3,13 +3,7 @@ import MainContainer from "../../components/MainContainer"
 import Heading1 from "../../components/headings/heading1"
 import Heading2 from "../../components/headings/heading2"
 import Heading3 from "../../components/headings/heading3"
-<<<<<<< HEAD
-import Card1 from "../../components/Cards/card1"
-import Card2 from "../../components/Cards/card2"
-import Card3 from "../../components/Cards/card3"
-=======
 import Card1 from "../../components/cards/card1"
->>>>>>> gh-pages
 
 function Cards(){
     return(
@@ -24,11 +18,7 @@ function Cards(){
             </Card1>
 
             <Card1 heading="Example Card 3">
-<<<<<<< HEAD
-                This card has no shadow
-=======
                 This card has a shadow
->>>>>>> gh-pages
             </Card1>
 
             <Card1 heading="Example Card 4" showBorder={false}>

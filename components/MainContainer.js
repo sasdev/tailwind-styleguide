@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-// Used as the wrapper for <MainContainer> </MainContainer>
-=======
 /**
  * MainContainer component
  * 
@@ -13,7 +10,6 @@
  * @param {boolean} [props.usePadding=true] - Whether to apply padding to the container
  * @returns {JSX.Element} The rendered MainContainer component
  */
->>>>>>> gh-pages
 
 import React from "react"
 import Heading1 from "./headings/heading1"

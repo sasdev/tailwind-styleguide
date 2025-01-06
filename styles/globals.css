@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-<<<<<<< HEAD
-=======
 /* Style used for debug */
 .b1 {
     border: solid 1px red !important;
@@ -17,7 +15,6 @@
   border: solid 1px purple !important;
 }
 
->>>>>>> gh-pages
 html {
   color-scheme: light;
 }

@@ -1,17 +1,9 @@
 import React from "react"
 import { useState, useEffect } from 'react'
-<<<<<<< HEAD
-import Layout from "../../components/layout/layout"
-import MainContainer from "../../components/MainContainer"
-import Heading1 from "../../components/headings/heading1"
-import Heading2 from "../../components/headings/heading2"
-import Card1 from "../../components/Cards/card1"
-=======
 import MainContainer from "../../components/MainContainer"
 import Heading1 from "../../components/headings/heading1"
 import Heading2 from "../../components/headings/heading2"
 import Card1 from "../../components/cards/card1"
->>>>>>> gh-pages
 import { Tab } from "@headlessui/react"
 
 export default function TabsDemo() {
