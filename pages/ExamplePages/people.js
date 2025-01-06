@@ -1,58 +1,82 @@
 import React from "react";
-import MainContainer from "../../components/MainContainer.js";
-import people from "../../data/people.js";
-import Link from "next/link";
-import TableLink from "../../components/TableLink";
-import Card1 from "../../components/Cards/card1.js";
+import { useRouter } from "next/router";
+import MainContainer from "@components/MainContainer.js";
+import people from "@data/people.js";
+import Card1 from "@components/cards/card1.js";
 
 function People() {
+  const router = useRouter();
+
+  const handleRowClick = (id) => {
+    router.push(`/ExamplePages/people/${id}`);
+  };
+
   return (
     <MainContainer heading="People">
       <Card1 showPadding={false}>
-        <table className="border border-gray-300 w-full text-left">
-          <thead>
-            <tr>
-              <th className="px-4 py-2 bg-gray-100 border-b border-gray-300 w-10">
-                Id
-              </th>
-              <th className="px-4 py-2 bg-gray-100 border-b border-gray-300">
-                First Name
-              </th>
-              <th className="px-4 py-2 bg-gray-100 border-b border-gray-300">
-                Last Name
-              </th>
-              <th className="px-4 py-2 bg-gray-100 border-b border-gray-300">
-                Phone
-              </th>
-              <th className="px-4 py-2 bg-gray-100 border-b border-gray-300">
-                Email
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            {people.map((person) => (
-              <tr key={person.id}>
-                <td className="border-b border-gray-300 p-0">
-                  <TableLink href={`/ExamplePages/people/${person.id}`}>
-                    {person.id}
-                  </TableLink>
-                </td>
-                <td className="px-4 py-2 border-b border-gray-300">
-                  {person.first_name}
-                </td>
-                <td className="px-4 py-2 border-b border-gray-300">
-                  {person.last_name}
-                </td>
-                <td className="px-4 py-2 border-b border-gray-300">
-                  {person.phone}
-                </td>
-                <td className="px-4 py-2 border-b border-gray-300">
-                  {person.email}
-                </td>
+        <div className="overflow-x-auto">
+          <table className="min-w-full table-auto divide-y divide-gray-200">
+            <thead className="bg-gray-50">
+              <tr>
+                <th
+                  scope="col"
+                  className="px-2 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                >
+                  Id
+                </th>
+                <th
+                  scope="col"
+                  className="px-2 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                >
+                  First Name
+                </th>
+                <th
+                  scope="col"
+                  className="px-2 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                >
+                  Last Name
+                </th>
+                <th
+                  scope="col"
+                  className="px-2 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                >
+                  Phone
+                </th>
+                <th
+                  scope="col"
+                  className="px-2 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                >
+                  Email
+                </th>
               </tr>
-            ))}
-          </tbody>
-        </table>
+            </thead>
+            <tbody className="bg-white divide-y divide-gray-200">
+              {people.map((person) => (
+                <tr
+                  key={person.id}
+                  onClick={() => handleRowClick(person.id)}
+                  className="cursor-pointer hover:bg-gray-100"
+                >
+                  <td className="px-2 py-4 whitespace-nowrap text-sm text-gray-500">
+                    {person.id}
+                  </td>
+                  <td className="px-2 py-4 whitespace-nowrap text-sm text-gray-500">
+                    {person.first_name}
+                  </td>
+                  <td className="px-2 py-4 whitespace-nowrap text-sm text-gray-500">
+                    {person.last_name}
+                  </td>
+                  <td className="px-2 py-4 whitespace-nowrap text-sm text-gray-500">
+                    {person.phone}
+                  </td>
+                  <td className="px-2 py-4 whitespace-nowrap text-sm text-gray-500">
+                    {person.email}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
       </Card1>
     </MainContainer>
   );
