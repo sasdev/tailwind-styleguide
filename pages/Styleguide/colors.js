@@ -1,7 +1,7 @@
 import React from "react";
 import Heading1 from "../../components/headings/heading1";
 import MainContainer from "../../components/MainContainer";
-import Card1 from "@components/notcards/card1"
+import Card1 from "@components/cards/card1"
 
 function ColorBox({ color, shade, hex }) {
   return (

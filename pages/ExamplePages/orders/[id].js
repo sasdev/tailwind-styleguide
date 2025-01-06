@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import orders from "../../../data/orders.js";
 import MainContainer from "../../../components/MainContainer.js";
-import Card1 from "@components/notcards/card1.js"
+import Card1 from "@components/cards/card1.js"
 import Image from "next/image";
 
 const OrderDetail = () => {

@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Card1 from "@components/notcards/card1";
+import Card1 from "@components/cards/card1";
 import { useRouter } from "next/router";
 
 const OrderHistory = ({ orders }) => {
