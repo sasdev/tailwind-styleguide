@@ -1,7 +1,11 @@
 import { useRouter } from "next/router";
 import orders from "../../../data/orders.js";
 import MainContainer from "../../../components/MainContainer.js";
+<<<<<<< HEAD
 import Card1 from "../../../components/cards/Card1.js";
+=======
+import Card1 from "../../../components/cards/card1.js";
+>>>>>>> gh-pages
 import Image from "next/image";
 
 const OrderDetail = () => {

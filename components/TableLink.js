@@ -12,7 +12,11 @@ import Link from "next/link";
 const TableLink = ({ href, children }) => {
     return (
         <Link href={href} legacyBehavior>
+<<<<<<< HEAD
             <a className="block w-full h-full text-blue-500 py-2 px-4 border-r-2 text-center border-neutral-200 border-solid hover:bg-neutral-200">{children}</a>
+=======
+            <a className="block w-full h-full text-blue-500 py-2 border-neutral-200 border-solid hover:bg-neutral-200">{children}</a>
+>>>>>>> gh-pages
         </Link>
     );
 };

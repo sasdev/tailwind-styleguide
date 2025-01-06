@@ -1,8 +1,12 @@
 import React from "react"
 import MainContainer from "../../components/MainContainer"
 import Heading2 from "../../components/headings/heading2"
+<<<<<<< HEAD
 import Card1 from "../../components/Cards/card1"
 import Card3 from "../../components/Cards/card3"
+=======
+import Card1 from "../../components/cards/card1"
+>>>>>>> gh-pages
 
 export default function Sections(){
     return(
