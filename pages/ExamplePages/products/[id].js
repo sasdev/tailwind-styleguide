@@ -2,7 +2,7 @@ import { useRouter } from "next/router";
 import { useState, useEffect } from "react";
 import products from "@data/products.js";
 import MainContainer from "@components/MainContainer.js";
-import Card1 from "@components/cards/card1.js";
+import Card1 from "@components/notcards/card1.js";
 import Popup from "@components/Popup";
 
 const ProductDetail = () => {

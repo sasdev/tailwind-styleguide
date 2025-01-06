@@ -3,7 +3,7 @@ import MainContainer from "../../components/MainContainer.js";
 import ordersData from "../../data/orders.js";
 import Link from "next/link";
 import TableLink from "../../components/TableLink";
-import Card1 from "@components/cards/card1"
+import Card1 from "@components/notcards/card1.js"
 import { useRouter } from "next/router";
 
 function Orders() {

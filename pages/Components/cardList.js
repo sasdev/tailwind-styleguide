@@ -1,7 +1,7 @@
 // filepath: /d:/Software/Tailwind stsyleguide/tailwind-styleguide/pages/Components/cardList.js
 import React, { useState } from "react";
 import MainContainer from "@components/MainContainer";
-import Card1 from "@components/cards/card1";
+import Card1 from "@components/notcards/card1";
 import CardItem from "@components/CardItem";
 
 const cardItems = [

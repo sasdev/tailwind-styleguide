@@ -2,7 +2,7 @@ import React from "react";
 import { useRouter } from "next/router";
 import MainContainer from "@components/MainContainer.js";
 import people from "@data/people.js";
-import Card1 from "@components/cards/card1.js";
+import Card1 from "@components/notcards/card1.js";
 
 function People() {
   const router = useRouter();
