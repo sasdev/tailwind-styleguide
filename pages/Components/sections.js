@@ -1,7 +1,7 @@
 import React from "react"
 import MainContainer from "../../components/MainContainer"
 import Heading2 from "../../components/headings/heading2"
-import Card1 from "../../components/cards/card1"
+import Card1 from "@components/cards/card1"
 
 export default function Sections(){
     return(
