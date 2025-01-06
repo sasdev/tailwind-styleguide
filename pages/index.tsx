@@ -9,11 +9,7 @@ const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 export default function Home() {
 
   return (
-<<<<<<< HEAD
-    <MainContainer>
-=======
     <MainContainer heading="Your Heading Here" usePadding={true}>
->>>>>>> gh-pages
       <Head>
         <title>Styleguide Demo</title>
       </Head>

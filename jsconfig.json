@@ -1,14 +1,4 @@
 {
-<<<<<<< HEAD
-    "compilerOptions": {
-      "baseUrl": ".",
-      "paths": {
-        "@components/*": ["components/*"],
-        "@data/*": ["data/*"]
-      }
-    }
-  }
-=======
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
@@ -18,4 +8,3 @@
     }
   }
 }
->>>>>>> gh-pages
